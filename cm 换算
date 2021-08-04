@@ -1,0 +1,14 @@
+#define _CRT_SECURE_NO_VARNINGS 1
+
+#include <stdio.h>
+
+int main()
+{
+	int  cm,foot, inch;
+	printf("请输入厘米数：\n");
+	scanf_s("%d", &cm);
+	foot = cm / 30.48;
+	inch = (cm/30.48-foot) * 12;
+	printf("%d厘米可换算成%d英尺%d英寸。/n",cm,foot,inch);
+    return 0;
+}
